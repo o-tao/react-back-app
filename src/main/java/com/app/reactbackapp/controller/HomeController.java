@@ -15,11 +15,10 @@ public class HomeController {
     }
 
     @GetMapping("/form1")
-    public Map<String, String> form1(@RequestParam("name") String name,
-                                     @RequestParam("password") String password) {
-        Map<String, String> resultMap = new HashMap<>();
-        resultMap.put("name", name);
-        resultMap.put("password", password);
+    public Map<String, String> form1(@RequestParam Map<String, String> resultMap) {
+//        Map<String, String> resultMap = new HashMap<>();
+//        resultMap.put("name", name);
+//        resultMap.put("password", password);
 
         return resultMap;
     }

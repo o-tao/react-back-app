@@ -24,12 +24,8 @@ public class HomeController {
         return resultMap;
     }
 
-    @PostMapping("/form1")
-    public Map<String, String> form2(@RequestParam("name") String name,
-                                     @RequestParam("password") String password) {
-        Map<String, String> resultMap = new HashMap<>();
-        resultMap.put("name", name);
-        resultMap.put("password", password);
+    @PostMapping("/form2")
+    public Map<String, String> form2(@RequestBody Map<String, String> resultMap) {
 
         return resultMap;
     }
